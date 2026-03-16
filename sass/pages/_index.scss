@@ -1,0 +1,111 @@
+@use '../utilities' as *;
+
+// HERO
+.main-index {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 10vw;
+  margin-bottom: $padding-section;
+
+  h1 {
+    position: absolute;
+    text-align: center;
+    font-size: clamp(2rem, 9vw, 8rem);
+    font-weight: bolder;
+    color: $color-primary;
+  }
+
+  span {
+    color: $color-accent;
+    font-style: italic;
+    display: block;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+// ARTICLE
+article {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: $padding-base;
+  margin-bottom: 4rem;
+
+  button {
+    border-radius: $radius-pill;
+    border: 2px solid $color-primary;
+    padding: 0.5rem $padding-base;
+    background: transparent;
+    cursor: pointer;
+  }
+}
+
+.article-image img {
+  width: 100%;
+}
+
+.article-content {
+  padding: $padding-base;
+}
+
+h2 {
+  color: $color-primary;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+
+  span {
+    color: $color-accent-alt;
+  }
+}
+
+.bloques {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: $padding-section 0;
+}
+
+.destacado {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  h4 {
+    color: $color-accent;
+  }
+
+  p {
+    font-weight: bold;
+  }
+}
+
+// SECCIÓN PROYECTOS (index)
+.section-index {
+  padding: $padding-base;
+  margin-bottom: 3rem;
+}
+
+.section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: $padding-base;
+}
+
+.section-main-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: $padding-base;
+}
+
+.section-image img {
+  width: 100%;
+}
+
+.project-block {
+  padding-bottom: $padding-base;
+}

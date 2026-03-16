@@ -1,0 +1,40 @@
+@use '../utilities' as *;
+
+.nav-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 $padding-section;
+}
+
+.bootstrap-header {
+
+  .navbar {
+    background: $color-primary;
+    padding: 0.75rem 0;
+  }
+
+  .navbar-brand img {
+    height: 2.5rem;
+  }
+
+  .nav-link {
+    color: $color-white;
+    margin-left: 1.8rem;
+    font-size: $font-size-base;
+
+    &:hover {
+      color: $color-nav-hover;
+    }
+  }
+
+  .navbar-toggler {
+    border: none;
+  }
+
+  .navbar-toggler-icon {
+    filter: invert(1);
+  }
+}
+

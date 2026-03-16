@@ -1,0 +1,113 @@
+@use '../utilities' as *;
+
+// HERO
+.hero-proyecto {
+  position: relative;
+  padding: 5rem $padding-section;
+  background-color: $color-bg-light;
+  background-image: url('../imagenes/banner-proyectos.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100% 13vh;
+  object-fit: cover;
+
+  h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    font-style: italic;
+    color: $color-accent;
+    margin-bottom: 1.5rem;
+    line-height: 1;
+  }
+
+  p {
+    font-size: 1.1rem;
+    color: $color-text-light;
+    line-height: $line-height-base;
+  }
+}
+
+.hero-contenido {
+  max-width: 600px;
+}
+
+// MAIN
+.main-proyectos {
+  display: block;
+  position: static;
+  line-height: normal;
+  padding: 0 $padding-section;
+  margin-bottom: 3rem;
+  overflow: hidden;
+}
+
+.proyecto-destacado img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  max-height: 480px;
+}
+
+.proyecto-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+}
+
+.proyecto-meta {
+  display: flex;
+  align-items: last baseline;
+  gap: 0.75rem;
+}
+
+.proyecto-info h3,
+.proyecto-bottom h3 {
+  font-size: $font-size-base;
+  font-weight: 700;
+  color: $color-text-dark;
+}
+
+.numero {
+  font-size: $font-size-xs;
+  color: $color-text-muted;
+  font-weight: 400;
+  flex-shrink: 0;
+}
+
+.categoria {
+  background-color: $color-accent;
+  color: $color-white;
+  font-size: $font-size-tag;
+  font-weight: 600;
+  padding: 5px 14px;
+  border-radius: $radius-tag;
+  white-space: nowrap;
+}
+
+// GRID DE PROYECTOS
+.proyectos-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.proyecto-item {
+  min-width: 0;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    aspect-ratio: 4 / 3;
+  }
+}
+
+.proyecto-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 0 0.5rem;
+  border-bottom: 1px solid $color-border;
+}

@@ -1,0 +1,47 @@
+@use '../utilities' as *;
+
+footer {
+  background: $color-primary;
+  color: $color-white;
+  padding: $padding-section 1.5rem;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: $padding-section;
+}
+
+.footer-logo img {
+  width: 3rem;
+}
+
+.footer-nav {
+
+  ul {
+    display: flex;
+    gap: $padding-section;
+    list-style: none;
+  }
+
+  a {
+    color: $color-white;
+  }
+}
+
+.footer-contacto {
+  display: flex;
+  gap: $padding-base;
+
+  a {
+    color: $color-white;
+  }
+}
+
+.footer-copy {
+  text-align: center;
+  margin-top: $padding-base;
+  font-size: $font-size-sm;
+  font-style: italic;
+}

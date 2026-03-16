@@ -1,0 +1,16 @@
+// UTILITIES
+@use "utilities/variables";
+
+// BASE
+@use "base/reset"; 
+
+// LAYOUT
+@use 'layout/header';
+@use 'layout/footer';
+@use 'layout/responsive';
+
+// PAGES
+@use 'pages/index';
+@use 'pages/proyectos';
+@use 'pages/contacto';
+
