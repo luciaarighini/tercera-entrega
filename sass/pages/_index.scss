@@ -13,7 +13,7 @@
 .bootstrap-header {
 
     .navbar {
-        background-color: #003d82 !important;
+        background-color: $color-primary !important;
         padding: .75rem 0;
     }
 
@@ -25,9 +25,25 @@
         color: white;
         margin-left: 1.8rem;
         font-size: 1rem;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: $color-white;
+            transition: width 0.3s ease;
+        }
 
         &:hover {
-            color: #dce8f3;
+            color: $color-white;
+
+            &::after {
+                width: 100%;
+            }
         }
     }
 
@@ -59,7 +75,7 @@
     }
 
     span {
-        color: #ff0000;
+        color: $color-accent;
         font-style: italic;
         display: block;
     }
@@ -95,7 +111,7 @@ h2 {
     margin-bottom: .5rem;
 
     span {
-        color: #FB0002;
+        color: $color-accent;
     }
 }
 
@@ -111,7 +127,7 @@ h2 {
     gap: .5rem;
 
     h4 {
-        color: #ff0000;
+        color: $color-accent;
     }
 
     p {
@@ -121,10 +137,16 @@ h2 {
 
 article button {
     border-radius: 24px;
-    border: 2px solid #003d82;
+    border: 2px solid $color-primary;
     padding: .5rem 1rem;
     background: transparent;
     cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+
+    &:hover {
+        background: $color-primary;
+        color: $color-white;
+    }
 }
 
 
@@ -140,6 +162,14 @@ article button {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1rem;
+}
+
+.section-title a {
+    transition: color 0.3s ease;
+
+    &:hover {
+        color: $color-accent;
+    }
 }
 
 .section-main-container {
@@ -160,8 +190,8 @@ article button {
 /* FOOTER */
 
 footer {
-    background-color: #003d82 !important;
-    color: white;
+    background-color: $color-primary !important;
+    color: $color-white;
     padding: 2rem 1.5rem;
 }
 
@@ -187,12 +217,12 @@ footer {
     gap: 1rem;
 
     a {
-        color: white;
+        color: $color-white;
     }
 }
 
 .footer-nav a {
-    color: white;
+    color: $color-white;
 }
 
 .footer-copy {

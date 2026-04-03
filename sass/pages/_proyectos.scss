@@ -68,6 +68,15 @@
   color: $color-text-dark;
 }
 
+.proyecto-info h3 a,
+.proyecto-bottom h3 a {
+    transition: color 0.3s ease;
+
+    &:hover {
+        color: $color-accent;
+    }
+}
+
 .numero {
   font-size: $font-size-xs;
   color: $color-text-muted;
