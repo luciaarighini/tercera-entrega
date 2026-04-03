@@ -1,111 +1,203 @@
 @use '../utilities' as *;
 
-// HERO
-.main-index {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  line-height: 10vw;
-  margin-bottom: $padding-section;
+/* HEADER */
 
-  h1 {
-    position: absolute;
-    text-align: center;
-    font-size: clamp(2rem, 9vw, 8rem);
-    font-weight: bolder;
-    color: $color-primary;
-  }
-
-  span {
-    color: $color-accent;
-    font-style: italic;
-    display: block;
-  }
-
-  img {
+.nav-container {
     width: 100%;
-  }
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
 }
 
-// ARTICLE
-article {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: $padding-base;
-  margin-bottom: 4rem;
+.bootstrap-header {
 
-  button {
-    border-radius: $radius-pill;
-    border: 2px solid $color-primary;
-    padding: 0.5rem $padding-base;
-    background: transparent;
-    cursor: pointer;
-  }
+    .navbar {
+        background-color: #003d82 !important;
+        padding: .75rem 0;
+    }
+
+    .navbar-brand img {
+        height: 2.5rem;
+    }
+
+    .nav-link {
+        color: white;
+        margin-left: 1.8rem;
+        font-size: 1rem;
+
+        &:hover {
+            color: #dce8f3;
+        }
+    }
+
+    .navbar-toggler {
+        border: none;
+    }
+
+    .navbar-toggler-icon {
+        filter: invert(1);
+    }
+}
+
+
+/* HERO */
+
+.main-index {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 10vw;
+    margin-bottom: 2rem;
+
+    h1 {
+        position: absolute;
+        text-align: center;
+        font-size: clamp(2rem, 9vw, 8rem);
+        font-weight: bolder;
+        color: #003d82;
+    }
+
+    span {
+        color: #ff0000;
+        font-style: italic;
+        display: block;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+
+/* ARTICLE */
+
+article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 4rem;
 }
 
 .article-image img {
-  width: 100%;
+    width: 100%;
 }
 
 .article-content {
-  padding: $padding-base;
+    padding: 1rem;
 }
 
 h2 {
-  color: $color-primary;
-  font-size: 2rem;
-  font-weight: bold;
-  line-height: 1;
-  margin-bottom: 0.5rem;
+    color: #003d82;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1;
+    margin-bottom: .5rem;
 
-  span {
-    color: $color-accent-alt;
-  }
+    span {
+        color: #FB0002;
+    }
 }
 
 .bloques {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: $padding-section 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2rem 0;
 }
 
 .destacado {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
 
-  h4 {
-    color: $color-accent;
-  }
+    h4 {
+        color: #ff0000;
+    }
 
-  p {
-    font-weight: bold;
-  }
+    p {
+        font-weight: bold;
+    }
 }
 
-// SECCIÓN PROYECTOS (index)
+article button {
+    border-radius: 24px;
+    border: 2px solid #003d82;
+    padding: .5rem 1rem;
+    background: transparent;
+    cursor: pointer;
+}
+
+
+/* PROYECTOS SECTION */
+
 .section-index {
-  padding: $padding-base;
-  margin-bottom: 3rem;
+    padding: 1rem;
+    margin-bottom: 3rem;
 }
 
 .section-title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: $padding-base;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
 }
 
 .section-main-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: $padding-base;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
 }
 
 .section-image img {
-  width: 100%;
+    width: 100%;
 }
 
 .project-block {
-  padding-bottom: $padding-base;
+    padding-bottom: 1rem;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #003d82 !important;
+    color: white;
+    padding: 2rem 1.5rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.footer-logo img {
+    width: 3rem;
+}
+
+.footer-nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.footer-contacto {
+    display: flex;
+    gap: 1rem;
+
+    a {
+        color: white;
+    }
+}
+
+.footer-nav a {
+    color: white;
+}
+
+.footer-copy {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: .9rem;
+    font-style: italic;
 }

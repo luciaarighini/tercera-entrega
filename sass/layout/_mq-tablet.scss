@@ -1,31 +1,28 @@
-@use '../utilities' as *;
-
+@use '../utilities/variables' as *;
 
 @media (min-width: 768px) and (max-width: 1023px) {
- /* RESPONSIVE TABLET - INDEX */
-    /* ARTICLE */
-  article {
-    grid-template-columns: 1fr;
-  }
 
-  .bloques {
-    grid-template-columns: 1fr 1fr;
-  }
+    /* INDEX - ARTICLE */
+    article {
+        grid-template-columns: 1fr;
+    }
 
-  /* PROYECTOS */
-  .section-main-conteiner {
-    grid-template-columns: 1fr;
-  }
+    .bloques {
+        grid-template-columns: 1fr 1fr;
+    }
 
-  /* FOOTER */
-  .footer-conteiner {
-    flex-wrap: wrap;
-    gap: 2rem;
-  }
+    /* INDEX - PROYECTOS */
+    .section-main-container {
+        grid-template-columns: 1fr;
+    }
 
+    /* FOOTER */
+    .footer-container {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
 
-
- /* RESPONSIVE TABLET - PROYECTOS */
+    /* PROYECTOS */
     .proyectos-grid {
         grid-template-columns: 1fr 1fr;
     }
@@ -35,22 +32,18 @@
         padding: 4rem 2rem;
     }
 
-
-
- /* RESPONSIVE TABLET - CONTACTO */
+    /* CONTACTO - NUEVO */
     .contact-container {
-        gap: $padding-section;
-        padding: $padding-section 1.5rem;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem;
     }
 
-    .contact-info {
-        h1 {
-        font-size: clamp(2.5rem, 5vw, 3.5rem);
-        }
+    .contact-info h1 {
+        font-size: 3rem;
     }
 
     .contact-form {
-        max-width: 420px;
+        max-width: 100%;
     }
-
 }

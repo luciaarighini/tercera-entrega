@@ -1,24 +1,16 @@
-@use '../utilities/variables' as *;
-
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: $font-family-base;
-  line-height: $line-height-base;
-  color: $color-text;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
 }
 
 a {
-  text-decoration: none;
-  color: inherit;
-}
-
-hr {
-  border: none;
-  border-top: 1px solid $color-border;
-  margin-bottom: 1.5rem;
+    text-decoration: none;
+    color: inherit;
 }

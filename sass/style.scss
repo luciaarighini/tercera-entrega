@@ -1,17 +1,14 @@
-// UTILITIES
-@use "utilities/variables";
+@use 'utilities/variables';
+@use 'utilities/mixin';
 
-// BASE
-@use "base/reset"; 
+// Base
+@use 'base/reset';
 
-// LAYOUT
-@use 'layout/header';
-@use 'layout/footer';
-@use 'layout/mq-mobile';
-@use 'layout/mq-tablet';
-
-// PAGES
+// Pages
 @use 'pages/index';
 @use 'pages/proyectos';
 @use 'pages/contacto';
 
+// Layout (Media Queries)
+@use 'layout/mq-mobile';
+@use 'layout/mq-tablet';
