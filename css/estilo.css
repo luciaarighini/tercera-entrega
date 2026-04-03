@@ -55,9 +55,42 @@ a {
 }
 .bootstrap-header .navbar-toggler {
   border: none;
+  box-shadow: none;
+  outline: none;
+  padding: 0;
 }
-.bootstrap-header .navbar-toggler-icon {
-  filter: invert(1);
+.bootstrap-header .navbar-toggler:focus {
+  box-shadow: none;
+  outline: none;
+}
+.bootstrap-header {
+  /* HAMBURGUESA ANIMADA */
+}
+.bootstrap-header .hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 22px;
+  height: 16px;
+  cursor: pointer;
+}
+.bootstrap-header .hamburger-icon span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform-origin: center;
+}
+.bootstrap-header .navbar-toggler[aria-expanded=true] .hamburger-icon span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.bootstrap-header .navbar-toggler[aria-expanded=true] .hamburger-icon span:nth-child(2) {
+  opacity: 0;
+}
+.bootstrap-header .navbar-toggler[aria-expanded=true] .hamburger-icon span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
 }
 
 /* HERO */
