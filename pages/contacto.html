@@ -3,128 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto-lucia Arighini</title>
+
+    <title>Contacto | Lucia Arighini Portfolio</title>
+    <meta name="description" content="¿Tenés un proyecto en mente? Contactá a Lucia Arighini, diseñadora UX/UI con base en Buenos Aires. Escribile por email o completá el formulario y empecemos a trabajar juntos.">
+    <meta name="keywords" content="contacto diseñadora UX UI, contratar diseñadora gráfica, Lucia Arighini contacto, diseñadora freelance Buenos Aires">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/estilo.css">
 </head>
 
 <body>
 
- <!-- header -->
-   <header class="bootstrap-header">
+    <!-- header -->
+    <header class="bootstrap-header">
 
-    <nav class="navbar navbar-expand-md">
-        <div class="container-fluid nav-container">
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid nav-container">
 
-            <a class="navbar-brand" href="../index.html">
-                <img src="../imagenes/logo.png" alt="Logo Lucia Arighini">
-            </a>
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../imagenes/logo.png" alt="Logo Lucia Arighini">
+                </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="hamburger-icon">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </span>
-            </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="hamburger-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </button>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="projectos.html">PROYECTOS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">CONTACTO</a>
-                    </li>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="projectos.html">PROYECTOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+    </header>
+
+
+
+    
+    <!-- Hero Contacto -->
+    
+    <section class="contact-hero">
+        <div class="contact-hero-img">
+            <img src="../imagenes/banner-contacto.png" alt="banner">
+        </div>
+
+        <div class="contact-container">
+
+            <!-- Columna izquierda -->
+            <div class="contact-info">
+                <h1>TRABAJEMOS<br>JUNTOS!</h1>
+                <h3>Hablemos de tu proyecto</h3>
+
+                <div class="info-items">
+                    <p>📍 Buenos Aires, Argentina</p>
+                    <p>📧 luciaarighini@gmail.com</p>
+                    <p>📞 +54 1164206325</p>
+                </div>
+            </div>
+
+            <!-- Columna derecha -->
+            <div class="contact-form">
+                <form action="/submit" method="post">
+
+                    <label for="nombre">Nombre y apellido</label>
+                    <input id="nombre" name="nombre" type="text" required>
+
+                    <label for="email">Mail de contacto</label>
+                    <input id="email" name="email" type="email" required>
+
+                    <label for="consulta">Consulta</label>
+                    <textarea id="consulta" name="consulta" rows="6" required></textarea>
+
+                    <button type="submit">Enviar consulta</button>
+
+                </form>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Etiqueta footer-->
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-logo">
+            <img src="../imagenes/logo.png" alt="logo">
+            </div>
+
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="projectos.html">Proyectos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
                 </ul>
             </div>
 
-        </div>
-    </nav>
-
-</header>
-
-
-
-   
-<!-- Hero Contacto -->
- 
-<section class="contact-hero">
-    <div class="contact-hero-img">
-        <img src="../imagenes/banner-contacto.png" alt="banner">
-    </div>
-
-    <div class="contact-container">
-
-        <!-- Columna izquierda -->
-        <div class="contact-info">
-            <h1>TRABAJEMOS<br>JUNTOS!</h1>
-            <h3>Hablemos de tu proyecto</h3>
-
-            <div class="info-items">
-                <p>📍 Buenos Aires, Argentina</p>
-                <p>📧 luciaarighini@gmail.com</p>
-                <p>📞 +54 1164206325</p>
+            <div class="footer-contacto">
+                <a href="https://www.behance.net/luciaarighinii" target="_blank">Behance</a>
+                <a href="mailto:luciaarighini@gmail.com">Email</a>
             </div>
+
         </div>
 
-        <!-- Columna derecha -->
-        <div class="contact-form">
-            <form action="/submit" method="post">
-
-                <label for="nombre">Nombre y apellido</label>
-                <input id="nombre" name="nombre" type="text" required>
-
-                <label for="email">Mail de contacto</label>
-                <input id="email" name="email" type="email" required>
-
-                <label for="consulta">Consulta</label>
-                <textarea id="consulta" name="consulta" rows="6" required></textarea>
-
-                <button type="submit">Enviar consulta</button>
-
-            </form>
+        <div class="footer-copy">
+            <p>Copyright - Lucia Arighini 2026</p>
         </div>
 
-    </div>
+    </footer>
 
-</section>
-
-
-<!-- Etiqueta footer-->
-<footer>
-
-    <div class="footer-container">
-
-        <div class="footer-logo">
-         <img src="../imagenes/logo.png" alt="logo">
-        </div>
-
-        <div class="footer-nav">
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="projectos.html">Proyectos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </div>
-
-        <div class="footer-contacto">
-            <a href="https://www.behance.net/luciaarighinii" target="_blank">Behance</a>
-            <a href="mailto:luciaarighini@gmail.com">Email</a>
-        </div>
-
-    </div>
-
-    <div class="footer-copy">
-         <p>Copyright - Lucia Arighini 2023</p>
-     </div>
-
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
